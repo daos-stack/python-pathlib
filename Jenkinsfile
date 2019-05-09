@@ -14,7 +14,7 @@ pipeline {
                         }
                     }
                     steps {
-                        sh 'echo "linting on EL7 not supported for this RPM"
+                        sh 'echo "linting on EL7 not supported for this RPM"'
                     }
                 }
             }
