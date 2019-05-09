@@ -14,7 +14,7 @@ pipeline {
                         }
                     }
                     steps {
-                        sh 'make rpmlint'
+                        sh 'echo "linting on EL7 not supported for this RPM'
                     }
                 }
             }
