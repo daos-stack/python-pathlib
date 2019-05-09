@@ -1,6 +1,6 @@
 NAME    := python-pathlib
 SRC_EXT := gz
-SOURCE   = https://files.pythonhosted.org/packages/source/p/$(NAME)/$(NAME)-$(VERSION).tar.$(SRC_EXT)
+SOURCE   = https://files.pythonhosted.org/packages/source/p/pathlib/pathlib-$(VERSION).tar.$(SRC_EXT)
 
 COMMON_RPM_ARGS := --define "%_topdir $$PWD/_topdir"
 DIST    := $(shell rpm $(COMMON_RPM_ARGS) --eval %{?dist})
