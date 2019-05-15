@@ -25,7 +25,8 @@ RUN zypper --non-interactive install make rpm-build curl createrepo git    \
                                      lsb-release autoconf automake libtool \
                                      ca-certificates-mozilla
 # python-pathlib
-RUN zypper --non-interactive install python-setuptools python3-setuptools
+RUN zypper --non-interactive install python-setuptools python3-setuptools \
+                                     python-rpm-macros
 
 # force an upgrade to get any newly built RPMs
 ARG CACHEBUST=1
